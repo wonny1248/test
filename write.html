@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Write Post</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <h1 id="pageTitle">New Post</h1>
+
+  <form id="postForm">
+    <input type="text" name="title" placeholder="Title" required /><br />
+    <input type="text" name="tag" placeholder="Tag" required /><br />
+    <input type="text" name="author" placeholder="Author" required /><br />
+    <textarea name="content" placeholder="Content" rows="10" required></textarea><br />
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="assets/js/api.js"></script>
+  <script>
+    const form = document.getElementById("postForm");
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    const isEdit = params.get("edit") === "1";
+
+    if (isEdit && id) {
+      document.getElementById("pageTitle").textContent = "Edit Post";
+
+      fetchData().then(data => {
+        const post = data.find(p => p.id == id);
+        if (post) {
+          form.title.value = post.title;
+          form.tag.value = post.tag;
+          form.author.value = post.author;
+          form.content.value = post.content;
+        }
+      });
+    }
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const now = new Date().toISOString().split("T")[0];
+
+      const payload = {
+        id: id || Date.now(),
+        title: form.title.value,
+        tag: form.tag.value,
+        author: form.author.value,
+        createdAt: isEdit ? undefined : now,
+        updatedAt: now,
+        content: form.content.value
+      };
+
+      if (isEdit) {
+        await fetch(SCRIPT_URL, {
+          method: "PUT",
+          body: JSON.stringify(payload),
+          headers: { "Content-Type": "application/json" }
+        });
+        alert("Post updated!");
+      } else {
+        payload.createdAt = now;
+        await postData(payload);
+        alert("Post submitted!");
+      }
+
+      window.location.href = "notice.html";
+    });
+  </script>
+</body>
+</html>

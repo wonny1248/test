@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style type="text/css">
+			.tg  {border-collapse:collapse;border-spacing:0;}
+			.tg td{border-color:black;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:14px;
+			overflow:auto;padding:10px 5px;word-break:normal;}
+			.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:middle;font-size:18px}
+			.tg .tg-73oq{border-color:#000000;text-align:center;vertical-align:middle}
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><span><span class="title"><span style="color:#034ea2">N</span>ext-Generation <span style="color:#034ea2">I</span>nformation <span style="color:#034ea2">S</span>ecurity <span style="color:#034ea2">L</span>ab<br>차세대 정보보호 연구실</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">About NISL</a></li>
+							<li><a href="members.html">Members</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="publication.html">Publications</a></li>
+							<li><a href="apply.html">Recruitment</a></li>
+							<li><a href="https://kmu.ac.kr/uni/main/main.jsp">Keimyung Univ.</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Publications</h1>
+							<div class="table-wrapper">
+								<table id="products" class="tg">
+									<thead>
+										<tr>
+											<th class="tg-amwm">No.</th>
+											<th class="tg-amwm">Class</th>
+											<th class="tg-amwm">Title</th>
+											<th class="tg-amwm">Journal</th>
+											<th class="tg-amwm">Date</th>
+										</tr>
+									</thead>
+									<tbody id="table-body">
+										<!-- JavaScript로 추가 -->
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				<!-- Footer OLD-->
+				<div id="bottom-container"></div>
+
+				<script>
+					fetch('bottom.html')
+						.then(response => response.text())
+						.then(data => {
+							document.getElementById('bottom-container').innerHTML = data;
+						})
+						.catch(error => console.error('Error loading bottom.html:', error));
+				</script>
+				
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/papers.js"></script>
+
+	</body>
+</html>

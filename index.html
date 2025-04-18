@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>차세대정보보호연구실</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/favicon-96x96.png"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><span><span class="title"><span style="color:#034ea2">N</span>ext-Generation <span style="color:#034ea2">I</span>nformation <span style="color:#034ea2">S</span>ecurity <span style="color:#034ea2">L</span>ab<br>차세대 정보보호 연구실</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">About NISL</a></li>
+							<li><a href="members.html">Members</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="publication.html">Publications</a></li>
+							<!--		<li><a href="apply.html">Recruitment</a></li> --!>
+							<li><a href="#">Recruitment</a></li>
+							<li><a href="https://kmu.ac.kr/uni/main/main.jsp">Keimyung Univ.</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Welcome to the<br>Next-Generation Information Security Lab</h1>
+								<p style="font-size:120%">In the 21st century with information and telecommunication more important than ever before, the mobile network field is rapidly developing as the core of the information and telecommunication field.</p>
+								<p>The importance of information security is being more emphasized, as we live in the information society with system development. Information security is a social and national issue rather than personal. Under these circumstances, we have established Next-Generation Information Security Laboratory(NISL). "Next-Generation Information Security Technology" includes internet of things(IoT) security, vehicle ad hoc network(VANET) security, FinTech security, information security service technology for the mobile Internet, and authentication technology for the various network security system. These are the core of the next-generation network security technology. NISL at Keimyung University will do its best to improve the information security field in Korea, meet international standards, and enhance its competitive edge in the rapidly changing information and telecommunication society</p>
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<a href="members.html">
+										<h2>Members</h2>
+										<div class="content">
+											<p>소속 연구원을 소개합니다</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<a href="research.html">
+										<h2>Research</h2>
+										<div class="content">
+											<p>연구실에서 진행하는 주요 연구 내용</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<a href="publication.html">
+										<h2>Publications</h2>
+										<div class="content">
+											<p>학술지 제출 목록</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<a href="notice.html">
+										<h2>Notice</h2>
+										<div class="content">
+											<p>공지 사항</p>
+										</div>
+									</a>
+								</article>
+								<!-- <article class="style5">
+									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<a href="#">
+										<h2>News</h2>
+										<div class="content">
+											<p>연구실 연구 및 연구생 신청</p>
+										</div>
+									</a>
+								</article> -->
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<a href="https://kmu.ac.kr/uni/main/main.jsp">
+										<h2>Keimyung University</h2>
+										<div class="content">
+											<p>계명대학교 홈으로</p>
+										</div>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer OLD-->
+				<div id="bottom-container"></div>
+
+				<script>
+					fetch('bottom.html')
+						.then(response => response.text())
+						.then(data => {
+							document.getElementById('bottom-container').innerHTML = data;
+						})
+						.catch(error => console.error('Error loading bottom.html:', error));
+				</script>
+				
+				
+			</div>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
+	</body>
+</html>

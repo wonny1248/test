@@ -1,0 +1,38 @@
+SCIE|PLAKA-MD: PUF-Based Lightweight Authentication and Key Agreement Scheme for Medical Devices in IoHT|IEEE Internet of Things Journal|2025
+SCIE|A Secure and Efficient Authentication Scheme for Fog-Based Vehicular Ad Hoc Networks|Applied Sciences|2025
+SCIE|Blockchain-Assisted Secure and Lightweight Authentication Scheme for Multi-Server Internet of Drones Environments|Mathematics|2024
+SCIE|Provably Quantum Secure Three-Party Mutual Authentication and Key Exchange Protocol Based on Modular Learning with Error|Electronics|2024
+SCIE|Design of Secure and Privacy-Preserving Data Sharing Scheme Based on Key Aggregation and Private Set Intersection in Medical Information System|Mathematics|2024
+SCIE|Provably Secure Lightweight Mutual Authentication and Key Agreement Scheme for Cloud-Based IoT Environments|Sensors|2023
+SCIE|A Secure Content Trading for Cross-Platform in the Metaverse With Blockchain and Searchable Encryption|IEEE Access|2023
+SCIE|Secure and Privacy-Preserving Authentication Scheme Using Decentralized Identifier in Metaverse Environment|Electronics|2023
+SCIE|Provably Secure Mutual Authentication and Key Agreement Scheme Using PUF in Internet of Drones Deployments|Sensors|2023
+SCIE|Provably Secure PUF-Based Lightweight Mutual Authentication Scheme for Wireless Body Area Networks|Electronics|2022
+SCIE|Design of Secure Mutual Authentication Scheme for Metaverse Environments Using Blockchain|IEEE Access|2022
+SCIE|A Secure Three-Factor Authentication Protocol for E-Governance System Based on Multiserver Environments|IEEE Access|2022
+SCIE|Design of Blockchain-Based Lightweight V2I Handover Authentication Protocol for VANET|IEEE TNSE|2022
+SCIE|Design of Secure Handover Authentication Scheme for Urban Air Mobility Environments|IEEE Access|2022
+SCIE|Secure ECC-Based Three-Factor Mutual Authentication Protocol for Telecare Medical Information System|IEEE Access|2022
+SCIE|Provably Secure Three-Factor-Based Mutual Authentication Scheme with PUF for Wireless Medical Sensor Networks|Sensors|2021
+SCIE|A Secure, Lightweight, and Anonymous User Authentication Protocol for IoT Environments|Sustainability|2021
+SCIE|A Provably Secure and Lightweight Identity-based Two-party Authenticated Key Agreement Protocol for IIoT Environments|IEEE Systems Journal|2021
+SCIE|Design of Secure Decentralized Car-sharing System Using Blockchain|IEEE Access|2021
+SCIE|PEVRM Probabilistic Evolution Based Version Recommendation Model for Mobile Application|IEEE Access|2021
+SCIE|Design of Secure Protocol for Cloud-Assisted Electronic Health Record System Using Blockchain|Sensors|2020
+SCIE|A Secure and Efficient Three-Factor Authentication Protocol in Global Mobility Networks|Applied Science|2020
+SCIE|Privacy-Preserving Lightweight Authentication Protocol for Demand Response Management in Smart Grid Environment|Applied Science|2020
+SCIE|A lightweight three-factor authentication protocol for digital rights management system|Peer-to-Peer Networking and Applications|2020
+SCIE|A Dynamic Privacy-Preserving Key Management Protocol for V2G in Social Internet of Things|IEEE Access|2019
+SCIE|Secure Three-Factor Authentication Protocol for Multi-Gateway IoT Environments|Sensors|2019
+SCIE|Secure user authentication scheme with novel server mutual verification for multiserver environments|IJCS|2019
+SCIE|2PAKEP Provably Secure and Efficient Two-Party Authenticated Key Exchange Protocol for Mobile Environment|IEEE Access|2018
+SCIE|Provably Secure and Efficient Authentication Protocol for Roaming Service in Global Mobility Networks|IEEE Access|2017
+SCIE|Security analysis and enhancements of an improved multi-factor biometric authentication scheme|IJDSN|2017
+SCIE|A Selective Group Authentication Scheme for IoT-Based Medical Information System|Journal of Medical Systems|2017
+SCIE|Three-Factor User Authentication and Key Agreement Using Elliptic Curve Cryptosystem in Wireless Sensor Networks|Solid-State Electronics|2016
+SCIE|Secure biometric-based authentication scheme with smart card revocationreissue for wireless sensor networks|IJDSN|2016
+SCIE|Temperature-dependent characteristics of AlGaN_GaN FinFETs with sidewall MOS channel|Solid-State Electronics|2016
+SCIE|Lateral GaN nanowire prepared by using two-step TMAH wet etching and HfO2 sidewall spacer|Journal of Crystal Growth|2016
+SCIE|Surface Plasmon Polaritons of a Symmetric Metamaterial Slab Waveguide with a Hollow Core for Fluid Sensing|Journal of Korean Physics Society|2015
+SCIE|Privacy-preserving ID-based key agreement protocols for cluster-based MANETs|IJAHUC|2013
+SCIE|Anonymous Cluster-Based MANETs with Threshold Signature|IJDSN|2013
