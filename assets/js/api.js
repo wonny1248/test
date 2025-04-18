@@ -9,6 +9,6 @@ async function fetchData() {
     return await fetch(SCRIPT_URL, {
       method: "POST",
       body: JSON.stringify(data),
-      headers: { "Content-Type": "application/json" }
+      headers: {  "Content-Type": "text/plain" }
     });
   }
