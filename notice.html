@@ -1,31 +1,88 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>공지사항 게시판</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/notice.css">
+  <title>차세대정보보호연구실 - 공지사항</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/notice.css" />
+  <link rel="icon" href="images/favicon-96x96.png" />
 </head>
-<body>
-  <h1>공지사항</h1>
-  <table id="noticeTable">
-    <thead>
-      <tr>
-        <th>번호</th>
-        <th>제목</th>
-        <th>태그</th>
-        <th>작성자</th>
-        <th>작성일</th>
-        <th>수정일</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- 게시글 목록이 여기에 동적으로 삽입됩니다 -->
-    </tbody>
-  </table>
-  <a href="write.html">게시글 작성</a>
+<body class="is-preload">
+  <div id="wrapper">
 
-  <script src="assets/js/api.js"></script>
-  <script src="assets/js/notice.js"></script>
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="index.html" class="logo">
+          <span class="title">
+            <span style="color:#034ea2">N</span>ext-Generation <span style="color:#034ea2">I</span>nformation <span style="color:#034ea2">S</span>ecurity <span style="color:#034ea2">L</span>ab
+            <br>차세대 정보보호 연구실
+          </span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">About NISL</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publication.html">Publications</a></li>
+        <li><a href="notice.html">Notice</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <div class="board-container">
+      <div class="board-header">Notice Board</div>
+      <div class="board-search">
+        <input type="text" placeholder="검색어 입력" />
+        <button>🔍 검색</button>
+      </div>
+      <table class="board-table">
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>수수성일</th>
+          </tr>
+        </thead>
+        <tbody id="board-body">
+          <!-- JS에서 채워짐 -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <div id="bottom-container"></div>
+
+    <script>
+      fetch('bottom.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('bottom-container').innerHTML = data;
+        });
+    </script>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/notice.js"></script>
+
+  </div>
 </body>
 </html>

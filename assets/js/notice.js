@@ -2,19 +2,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     const notices = await fetchNotices();
     const tbody = document.querySelector("#noticeTable tbody");
   
-    notices.forEach((notice, index) => {
-      const row = document.createElement("tr");
+    const sorted = notices.sort((a, b) => b.id - a.id);
   
-      row.innerHTML = `
+    sorted.forEach((item, index) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
         <td>${index + 1}</td>
-        <td>${notice.title}</td>
-        <td>${notice.tag}</td>
-        <td>${notice.author}</td>
-        <td>${notice.createdAt}</td>
-        <td>${notice.updatedAt}</td>
+        <td>${item.title || "-"}</td>
+        <td>${item.author || "-"}</td>
+        <td>${item.createdAt || "-"}</td>
+        <td>${item.updatedAt || "-"}</td>
       `;
-  
-      tbody.appendChild(row);
+      tbody.appendChild(tr);
     });
   });
   
